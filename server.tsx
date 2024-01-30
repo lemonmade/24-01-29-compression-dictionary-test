@@ -12,17 +12,11 @@ export default {
       const url = new URL(request.url);
       const assetPath = url.pathname.slice(1);
 
-      const availableDictionary = undefined;
-      // const availableDictionary = request.headers.get(
-      //   'sec-available-dictionary',
-      // );
+      const availableDictionary = request.headers.get(
+        'sec-available-dictionary',
+      );
       if (availableDictionary) {
         const dictionary = await ASSETS.get(
-          `${assetPath.replace('assets/', 'diffs/')}.${availableDictionary}.sbr`,
-        );
-
-        console.log(
-          'dictionary',
           `${assetPath.replace('assets/', 'diffs/')}.${availableDictionary}.sbr`,
         );
 
