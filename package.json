@@ -16,6 +16,8 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@quilted/cloudflare": "^0.2.4",
+    "@quilted/craft": "^0.2.5",
     "@quilted/quilt": "^0.6.0",
     "@quilted/rollup": "^0.2.0",
     "@quilted/typescript": "^0.2.0",
@@ -30,7 +32,8 @@
     "tsx": "^4.7.0",
     "typescript": "^5.2.0",
     "vite": "^5.0.0",
-    "vitest": "^1.1.0"
+    "vitest": "^1.1.0",
+    "wrangler": "^3.25.0"
   },
   "sideEffects": [
     "*.css",
@@ -38,16 +41,7 @@
   ],
   "browserslist": {
     "defaults": [
-      "defaults and not dead"
-    ],
-    "modules": [
       "defaults and fully supports es6-module-dynamic-import"
-    ],
-    "evergreen": [
-      "last 1 firefox version",
-      "last 1 safari version",
-      "last 1 edge version",
-      "last 1 chrome version"
     ]
   },
   "prettier": {
